@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "editor.acceptSuggestionOnEnter": "on"
 }
+=======
+  "editor.acceptSuggestionOnEnter": "on"
+}
+>>>>>>> da35050 (git)

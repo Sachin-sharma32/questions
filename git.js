@@ -83,14 +83,29 @@
 // git apply {location of patch file}
 // git format-patch -1 {commit-id} -o patches
 // git am {location of patch file}
-// git push  --force 
+// git push  --force
 // git push --set-upstream origin {branch-name}
 // git branch --set-upstream-to=origin/main {branch-name}
-// git revert HEAD~2 
-// git stash save myWork 
+// git revert HEAD~2
+// git stash save myWork
 // git stash list
 // git stash apply {stash-id}
 // git stash drop {stash-id}
 // git bisect start
 // git bisect bad {bad-commit-id}
 // git bisect good {good-commit-id}
+// pull request
+//  clone project
+// make a separate branch
+// make commit using "source control" tab
+//  make a pull request using "github" tab (to merge your branch into main branch)
+// see pull requests tab on github
+// see the pull request in "github pull request" tab
+// checkout to main branch using menu bar in vscode
+// click "checkout" in the pull request
+// check the change in the main branch (eg-> run - npm run dev)
+// if found error then add comment in the pull request in "github pull request" tab
+// see the comment in github
+// make changes in the code and commit and push and make a new pull request
+// then again in main branch click in pull request  click "merge pull request"
+// install "gitlens" -> alongside terminal you will see "gitlens" tab (analyze commits using graph)
