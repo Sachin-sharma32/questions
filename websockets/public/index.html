@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hello world</h1>
+
+    <input type="text" id="message" />
+    <button id="send-message">Send Message</button>
+
+    <!-- ws8 -> this script will download socket io on client -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- ws9 -> this script will connect to the server -->
+    <script>
+      const socket = io();
+      // ws10 -> now if we go to http://localhost:8000 -> we can see the web socket connection message in nodemon
+
+      // ws14
+      socket.on("messageToClient", (message) => {
+        console.log(message);
+      });
+
+      const button = document.getElementById("send-message");
+      const message = document.getElementById("message");
+      button.addEventListener("click", () => {
+        // ws11
+        // after clicking button open dev tools -> network -> ws -> see the "upgrade" header
+        socket.emit("messageToServer", { data: message.value });
+      });
+    </script>
+  </body>
+</html>
