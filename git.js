@@ -94,8 +94,8 @@
 // git bisect start
 // git bisect bad {bad-commit-id}
 // git bisect good {good-commit-id}
-// pull request
-//  clone project
+// pull request:-
+// clone project
 // make a separate branch
 // make commit using "source control" tab
 //  make a pull request using "github" tab (to merge your branch into main branch)
