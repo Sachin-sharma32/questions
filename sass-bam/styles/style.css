@@ -1,0 +1,24 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  50% {
+    transform: translateX(0rem); }
+  100% {
+    opacity: 100%;
+    transform: translateX(10rem); } }
+
+@media only screen and (max-width: 37.5em) {
+  .highlight {
+    color: orange; } }
+
+.formButton {
+  background: #000000;
+  color: white;
+  border: 2px solid orange;
+  font-size: 1.6rem;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s; }
+

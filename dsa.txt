@@ -1,0 +1,194 @@
+Q. why not time instead of BigO (1point)
+Q. what does BigO does instead of counting time
+Q. what does 5n + 2 means in terms of counting operation, what is it's time complexity
+Q. what is the time complexity for parallel loops, what about loop within loop
+Q. what is O(2n), O(5n^2), O(5n^2 + n + 2) and O(500), explain why
+Q.  what is the time complexity of arithmetic operations
+Q. what is the time complexity of assignment operations
+Q. what is the time complexity of accessing array/object elements by index/key
+Q. O(n) O(nlogn) O(n2) O(1) O(logn), arrange them in order of their complexity
+Q. what does space complexity is used to analyze storage or memory
+Q. what is auxiliary space complexity (1point)
+Q. when we take about space complexity do we mean auxiliary space complexity
+Q. what is the space complexity of premitive types, what about string and array/objects, why
+Q. what does n represent in O(n) in space complexity in string,array and object
+Q. what is logarithms (1point)
+Q. what is the time complexity of Object.key/values methods
+Q. why we should not use javascript built in sort method, what is it's time complexity
+Q. what is the time complexity of pop/push shift/unshift
+Q. what is an algorithm (1point)
+Q. what are the 5 steps of problem solving 
+Q. what are the 5 questions to ask to understand the problem
+Q. what are the 4 examples we should use example
+
+----- Problem Solving Patterns -----
+Q. what is frequency counting algo (1point), how does it improve performance
+Q. Write a function same, which accepts two arrays. The function should return true if every value in the array has it's corresponding value squared in the second array. The frequency of values must be the same.
+Q. Given two strings, write a function to determine if the second string is an anagram of the first.
+Q. what is multiple pointer algo (1point)
+Q. Write a function called sumZero which accepts a sorted array of integers. The function should find the first pair where the sum is 0.
+Q. what is sliding window algo, which dt does it use
+Q. Implement a function called countUniqueValues, which accepts a sorted array, and counts the unique values in the array. 
+Q. what is divide and conquer algo (1point)
+Q. what type of algorithm is binary search
+Q. Given a sorted array of integers, write a function called search, that accepts a value and returns the index where the value passed to the function is located.
+
+Q. explain recursion with the help of boy and angry dragon story
+Q. what is the definition of recursion (1point)
+Q. what are the 2 important parts of recursion
+Q. count numbers between 0 and 5, represent it in call stack
+Q. how if one of the 2 parts of recursion is wrong can lead to stack overflow
+Q. collect all odd values in array, solve with help of helper function recursion
+Q. Write a function which accepts a base and an exponent.  It should return the result of raising the base to that exponent.
+Q. Write a function called productOfArray which takes in an array of numbers and returns the product of them all.
+
+Q. does binary search work on unsorted array
+Q. what is the worst and best case time complexity of binary search, what about linear search
+
+Q. what is naive string search, what is it's time complexity, explain it on paper with i and j pointer
+Q. what is the problem with naive string search, which algo. solves this 
+Q. what is Longest prefix suffix table, explain this table (AAAXAAAA)
+Q. do we consider the first element as suffix of prefix
+! explain the kmp alogrithm visually (AAAXAAAA, AAAA)
+Q. what is the full form of KMP
+
+
+Q. does javascript built in sort sorts number without comparator function
+Q. use javascript sort method with comparator function
+Q. what happens in bubble sort (1point), write code
+Q. what is the worst and best case time complexity for bubble sort
+Q. what is the only difference between bubble and selection sort in terms of approach
+Q. implement selection sort, what is it's time complexity
+! how insertion sort is implemented (1point), write code, what is it's time complexity
+Q. which sorting algo of the 3 have the worst best case complexity
+Q. what is the space complexity of the 3 algo
+Q. which sorting algo is best for nearly sorted data
+Q. which sorting also is best for adding new element to already sorted data
+Q. visually explain all 3 sorting algo so far
+Q. explain merge sort visually
+Q. code merge sort
+Q. what is the best and worst case time complexity of merge sort, why
+Q. what is the space complexity of merge sort
+Q. explain quick sort visually, code
+Q. can we take any element as pivot in quick sort
+Q. what is the best,worst time complexity of quick sort, give example.
+Q. explain radix sort visually
+! code radix sort
+Q. what is the best, worst time complexity of radix sort
+
+Q. what is data structure (1point)
+Q. what is the use of linked list (1point)
+Q. what is the use of tree data structure (1point)
+Q. is class a blue print for objects
+
+Q. what is the main concept of linked list (1point)
+Q. what are the 2 things nodes contain 
+Q. what are the 3 properties of linked list
+Q. does linked list has indexes
+Q. can we access elements randomly in linked list
+Q. perform following operations on linked list -> push,pop,unshift,shift,get,set,insert
+! reverse LL
+Q. what is the only difference between singly and doubly linked list
+Q. what is the 1 disadvantage of doubly LL over singly
+Q. perform all the above following operations on doubly linked list
+Q. what is the time complexity of push, pop, shift, unshift in singly linked list, what about doubly linked list, what about searching/accessing
+
+Q. which type of data structure Stack is and what about Queue
+Q. name 3 use cases of Stack
+Q. what is the time complexity of insertion/removal in Stack, what about searching/accessing
+Q. implement Stack using array, which 4 array methods are used for it 
+Q. implement Stack using linked list, which method do we use
+Q. which 4 array methods are use to implement Queue, what are their combination
+Q. implement queue using array
+Q. 2 ways to implement queue using linked list, which one is better
+Q. what are the terminology used for adding/removing elements from queue
+Q. do we need random access in stack or queue
+
+
+Q. what are linear and non-linear data structure, where does linked list and tree belong
+Q. can a node in tree point to sibling node
+Q. can one node have multiple parents
+Q. what is a leaf and root node
+Q. what is edge in tree DS
+Q. name 3 use cases of Tree DS 
+Q. can a tree have more than 2 child, what about binary tree
+Q. what is the 1 property of binary search tree
+Q. which searching algo BST uses
+Q. implement insertion in BST using linked list
+Q. implement find in BST using linked list
+Q. what is the best and worst time complexity of binary search tree insert
+
+Q. what are the 2 ways of traversing a general tree, explain visually
+Q. what are the 3 approaches to depth first traversal, explain visually
+Q. which data structure we use for breadth first traversal
+Q. implement breadth first traversal
+Q. implement depth first pre-order traversal
+Q. implement depth first post-order traversal
+Q. implement depth first in-order traversal
+Q. compare time complexity of depth and breadth first approach
+Q. compare space complexity if i) there are only right node to each node (deep tree)
+                               ii) if each node has multiple nodes and it (wide tree)
+
+Q. is heap a type of tree
+Q. how many children binary heap node can have
+Q. what is maxBinaryHeap and minBinaryHeap
+Q. what is the only difference between binary tree and binary heap
+Q. which side do we fill first in binary heap
+Q. which data structure we use to implement binary heap
+Q. which equation determines the left and which one does the right node
+Q. what is the equation to find the parent of children
+Q. insert element in binary heap
+Q. remove the root in binary heap
+Q. what is priority queue (1point)
+Q. implement priority queue using binary heap, implement using minBinaryHeap
+Q. what are the terms used in priority queue for inserting and removing(root)
+Q. what is the time complexity of binary heap for insertion,deletion and searching
+Q. does binary heap create one sided tree, what is the benefit in case of time complexity
+-----------------------------------------------------------------------------------------------
+
+Q. what is the other name for hash table
+Q. how is data stored in hash table
+Q. does javascript has build in hash map, what are those
+Q. what does hash function in hash map does
+Q. what are the 2 important qualities of hash function
+Q. what are the 2 ways for avoiding collisions in hash map
+Q. why do we use prime number to make index for a value in hash table
+! implement hash map hash function
+Q. implement set and get in hash map
+Q. print all the keys and values of hash map, don't print duplicate
+Q. what is the time complexity of insertion,deletion,access in hash map
+
+Q. what is a graph data structure (1point)
+Q. name 2 use cases of graph
+Q. what is vertex in graph
+Q. what is edge in graph
+Q. what is undirected graph, give example
+Q. what is directed graph, give example
+Q. what is weighted and unweighted graph, example with google map graph
+! what are the 2 ways of representing graph
+!. determine which one if better among  adjacency list and adjacency matrix in terms of adding vertex, removing vertex, querying connection
+Q. which one has better space complexity
+Q. implement adding and removing vertex and edge from graph using adjacency list
+Q. is every tree a graph, what are the 2 difference between them
+Q. what are the 2 ways to traverse a graph
+Q. implement dfs in graph
+Q. implement bfs in graph
+
+Q. what is Dijkstra's algorithm
+Q. implement weighted graph
+Q. visually represent Dijkstra's algo
+! code dijkstra's algorithm
+
+
+Q. what is dynamic programming
+Q. what are the only 2 type of problems dynamic programming works on
+Q. give example of overlapping subproblem, is merge sort an overlapping subproblem
+Q. give example of merge sort where there is overlapping subproblem
+Q. example optimal substructure with help of dijkstra's algo
+Q. implement fibonacci series using recursion what is the time complexity
+Q. what is the problem with above implementation of fibonacci series
+Q. what is memoization, use it to solve above problem using array
+Q. what is the time complexity of memoized solution using dynamic programming
+Q. what is the other form of dynamic programming apart from memoization
+Q. tabulation vs memoization which one has better space complexity, what about time complexity
+Q. implement fibonacci using tabulation

@@ -1,0 +1,19 @@
+-> <p> - tag
+-> <p>hello</p> - element 
+-> importance => !important -> inline -> id -> class -> element -> * 
+-> mostly properties related to text is inhereted from parent
+-> box model -> content, padding, border, margin 
+-> inline elements 
+  - height and width don't apply
+  - padding and margin - only horizontally 
+-> use inline-block 
+-> box-sizing:border-box - only height and width of element is taken for height and width not padding,border,margin
+-> grid - gutters,  grid cells 
+-> use svg icons coz they can scale infinitely 
+-----------------------------------------------------------------
+
+SASS
+-> mixin media query, mixin button style 
+-> use em, rem instead of px
+-> rem is responsive 
+

@@ -1,0 +1,44 @@
+Q tell me about yourself
+  * My name is sachin sharma
+  * I'm currently working as a full stack developer at Itxcelerate and I have been in this role for around 2 years
+  * I have around 2 1/2 years experience in web development, specializing in front-end
+  * I started with --------------
+  * I started web development purely out of my enthusism in the field, and I stay updated with the latest trends in the industry.
+  * I also hold a master's degree in computer application which provided me a strong foundation in computer sciences
+  * I'd be happy to answer any questions you may have about my experience or qualifications
+Q. how login flow work on website
+Q. what is JWT
+Q. is javascript single threaded or multi threading
+Q. what is thread pool 
+Q. how nodejs handle multithreading 
+Q. what is a middleware
+Q. wha are web hooks 
+   * http based callback function to allow communication between 2 apps (most usually 2 API)
+   * used to recieve data from other applications automatically
+   * in API = client API has to send request to server API continously until the request if fullfiled, this is called polling
+   * in webhooks - client API give a unique URL to server API and specifies the event which when trigged send some data to client API, now client API don't need to poll request to server, server will automatically sent the data (payload) to client API when an event occures on the server API
+   * webhooks are called reverse API's because they put the responsibility of communcation on server API 
+   * webhooks and api work together, webhooks is not possible without API 
+   * hence, webhooks also automate data transfer between APIs
+Q. what is virtual dom in react 
+Q. what are hooks in react 
+Q. have you used custom hook 
+Q. what is contextAPI 
+Q. difference between class and function components
+Q. what is event loop concept
+Q. what are closures
+Q. what is the use case of closures
+Q. what is event delegation
+Q. difference between deffer and async 
+Q. what is hoisting 
+Q. tell me some good coding practices you follow when you code
+Q. what is bundling (answer it using suspense)
+Q. what are SOLID principles
+
+---------------- practical -------------
+Q. write a promise which fulfills in 10 seconds
+Q. make a button to open a form and write submit form functionality to backend
+
+
+
+-> 

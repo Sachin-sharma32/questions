@@ -1,0 +1,245 @@
+INTERNET
+-> network - group of devices connected together
+-> internet - all the networks combined together (your's, neighbours, someone living 1000 miles away)
+-> internet is controlled by set of protocols to ensure data security
+-> core of internet - global network of interconnected routers
+-> these routers direct traffic between devices
+-> when you send data it is broken down into packets 
+-> these packets are sent to a router 
+-> router examines the packets and send it to next router 
+-> this process continues until packets reaches destination
+-> IP - responsible for routing traffic to correct destination
+-> TCP - ensures packages are sent securely and in right order
+-> other protocols - DNS, HTTP, SSL/TLS
+-> IP address - unique identifier for each device on internet
+-> Domain Name - human readable form to identify a website 
+-> DNS - translates domain name to IP address, process is call DNS lookup
+-> domain names are managed by domain registrars 
+-> google.co.uk
+  * .uk - top level domain
+  * .co - second level domain
+  * google - third level domain
+-> HTTP - used to transfer data between client and server
+-> SSL/TLS - provides secure communication over internet 
+-> when you visit a website, your browser send http request to server to ask for web page resources and server send http response containing resources
+-> HTTPS - same as http but encrypts data being transmitted using SSH/TLS
+-> applications within an IP are assigned a unique "port" to send data to correct location
+-> socket - combination of IP address and port to establish communication between devices
+-> connection - established between 2 sockets
+-> SSL/TLS certificate - to establish trust between client and server, a certificate authority verify their authenticity
+-> SSL handshake - client and server exchange info to establish secure connection
+-> hosting - server which keeps your website available over the internet 24*7 
+  * hosting means you are buying disk space (form your website's files) inside that server as well as bandwidth (capacity at which a device can transfer data)
+  * bandwidth is number of user accessing the website which the server can handle
+  * hosting services also ensures  
+    - security
+    - backups for files
+  * we can configure our hosting using a "cpanel"
+
+-----------------------------------------------------------------------------------------------------------------
+
+HTTP 
+-> http is stateless - every request is independent, this is why we have to send some type of authorization token every time we make a request to server
+-> http methods - get,post etc.
+-> status code 
+   * 1xx -> request has been received and processing
+   * 2xx -> successfully received and accepted
+   * 3xx -> further actions must be taken or redirection
+   * 4xx -> client error (eg - wrong client's details in form)
+   * 5xx -> sever error, something wrong with server code
+-> HTTP/2 -> improved version of http
+   * enables multiplexing
+   * in HTTP/1 client can request only one resource to server and cannot make another request until server fulfils/denies that request
+   * with multiplexing client can make multiple requests to the server and server can respond to the all requests at one 
+   * this also reduces the initial load time of application
+-> to examine request/response open network tab of dev tools 
+
+--------------------------------------------------------------------------------------------------------------
+
+BROWSER
+-> browser contains
+  * data - store and access data (local storage and cookies)
+  * UI - visual part
+  * browser engine (contains)
+    # rendering engine (mostly written in c++) 
+      - this is the part that handles html,css and js
+    # JS engine (V8 for chrome)
+  * networking - helps us talk to internet
+  * timers - like setTimeout etc. 
+-> how rendering engine displays html 
+  * loads html file from server
+  * initially it is in the form of bytes
+  * based on character encoding it is converted into text ( like utf-8 which we give in html document)
+  * now tokenization happens - different html tags are segregated
+  * for each the html tags tokanised seperate object (js object) is created which contains info about the tag, attributes, text content etc. 
+  * now a "model" is prepared from these millions of objects - establish relation between tags (child, parent, sibling etc.)
+  * now a node list (data structure) from the model - this is our DOM
+  * same process if also followed for css which is called CSSOM (css object mode)
+    - bytes -> character encoding -> tokenization -> objects creation -> establish relation -> create Model
+  * when web page loads browser first starts working on DOM and if it finds a link to a css document then it starts working on CSSOM 
+  * now that we have DOM and CSSOM, the browser engine (v8) access these info and according to the dimensions of screen and css starting painting data on screen - render tree 
+  * but if in the html document browser find a link to a script (javascript) then browser will hault the work it was doing the DOM and start executing JS, this is why we use async/defer 
+  * but if browser find css link after it encounter script, it will hault execution of JS and start working os CSSOM, so yes CSS has more priority over JS 
+
+-------------------------------------------------------------------------------------------------------------------------------
+ 
+HTML SEMANTICS 
+-> helps search engines understand purpose of content on page 
+-> make content more accessible to people with disabilities 
+-> <header>
+  * top section - logo/title, navigation 
+  * separation between header and main content
+-> <nav> 
+-> <main> - main content of the page
+-> <article> - standalone info like blog post, review/comment
+-> <aside> - content related to main content but not integral part of it, eg -> ads, related posts
+-> <section> - divide <article>, <main> into small related pieces
+-> <footer> 
+-> <figure> - content referenced from main content like image 
+-> <figcaption> - description about references content
+-> <mark> - mark highlighted text, eg-> search results, highlighted text
+-> <time> 
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+SEO
+-> process of making site better for search engine
+-> technical requirements for page to get indexed
+  * googlebot is not blocked -> if page require log-in 
+  * pages blocked by robots.txt will not show in search results
+  * "page indexing report" and "crawl stats report" in "google search console" to check which pages are accessible to search engine
+  * "url inspection tool" - to test specific page
+  * only indexes pages with status code of 200
+  * search engine index page if it has "indexable content"
+    - content that is in a file tht google search supports (all files generated by coding are supported)
+    - doesn't violate spam policies
+      # showing content different from what you showed to search engine
+      # domains with slight variation to maximize react 
+
+------------------------------------------------------------------------------------------------------------
+
+Accessability
+-> enabling as many people as possible to access our website including people with disabilities
+-> site should be accessible through
+  - mouse
+  - keyboard
+  - touchscreen
+  - screen reader (reads website content aloud)
+  - voice assistants (alexa)
+-> site should not cause harm, due to excessive animation
+-> by default HTML is accessible if used correctly
+-> firefox accessibility inspector - check accessibility of website
+-> site should be accessible through slow internet connection
+-> semantic html
+-> in some countries it is a law to make site accessible
+-> 15% of population has some form of disability
+-> captions for people with hearing disabilities
+-> website should be fully accessible using keyboard
+-> for people with cognitive impairment (brain damage, weak memory, low IQ)
+  - easy to understand content
+  - highlight important content
+  - less ads
+  - easy forms and authentication
+-> pie charts may be harder or no possible to add accessibility so use simple table
+-> accessibility may not be possible everywhere, like photo gallery
+-> add an accessibility page on you website showing what steps are taken towards it and add a form if someone finds accessibility issues
+-> html accessibility
+  - use correct semantics like <button> for any clickable thing instead of <div> coz button has keyboard accessibility builtin
+  - semantics - good for seo 
+  - use the right tag at right place, eg -> don't use span,div etc. for heading
+  - instead of 5-7 -> 5 to 7 
+  - Jan -> January
+  - use <abbr> to describe a shortname
+  - don't make page layout using table, use semantics which also takes less internet to download
+  - use semantics instead of divs
+  - if using div instead of button then add role="button" along with tabindex="0" attributes
+  - but "enter" action cannot still be performed so we have to add javascript for it
+  - write meaningful descriptions for <a> and <label>, <a>click here</a> (bad), <a>More info about HTML</a> (good)
+  - always add <label> to <input> 
+  - don't forget <thead> <tbody> <th> and <caption> in table
+  - use "alt" with image, leave the "atl" empty if the image is purely for decoration (coz if you don't provide alt then screen reader will read the url, or use "role='presentation'")
+  - use "aria-labelledby" with <img> if you want to use same text with multiple images
+  - don't give "onclick" or "href='#'" for <a>, instead use <button> 
+  - if the <a> opens in new tab than add description or if it's not a link it'a a file -> <a target="_blank" href="something.com"> Something (open's in new tab) </a>
+  - use "skip links" - <a> placed just after <body> to jump user directly to main content
+  - add spacing between multiple <a> next to each other 
+-> css and js accessibility
+  - heading should look like a heading 
+  - don't change the styling of a semantic so much so that it don't like one 
+  - don't remove pointer cursor and dotted highlight from <a>
+  - that point is -> the semantic elements should retain their hover, focus and other accessibility features after styling with css
+  -  "webami's color contrast checker" - check color of background with text
+  - don't make input field red, instead use red color astrick 
+  - don't use visibility:none or display:none to hide something instead use position:absolute
+  - users can override your styles by using some tools like high contrast or increase text size - leave enough space around content to look good when zoomed in
+  - 2d and 3d animations/games may not have 100% accessibility but try to give access to keyboard as much as possible 
+  - don't generate all html using js
+  - use client side form verification alongside server (slow)
+  - along with mouse events like mouseover(), onClick() also provide keyboard events like focus(), blur()
+  - onClick() will listen to both mouse and keyboard
+-> WAI-ARIA 
+  - used when we want some non-semantic html to provide accessibility features of a semantic
+  - used to make <div> or 3rd party components semantic 
+  - three main features
+    * role="navigation" -> <nav>,  role="complementary" -> <aside> 
+    * properties 
+      # aria-required="true"
+      # aria-labelledby="label"
+    * states 
+      # aria-disabled="true" -> shows screen readers that input is disabled, using useRef make it "false" when input is enabled
+  - add aria-label in <input> with no <label> like search input 
+    * <input aria-label="search through site content" /> 
+  - if a section contains dynamic content which changes over time eg-> disabled/enabled <input> or added/removed by fetch/asios etc use:
+    * <section aria-live="assertive">...</section> -> read out the updated content to screen reader 
+    * <section aria-live="assertive" aria-atomic="true">...</section> -> read out all the content of section not just the one updated 
+  - non-semantic tags like <div> are not tabable like <button> 
+    * tabindex='0' -> make <div> tabable 
+    * tabindex='-1' -> make <div> access focus property using js 
+  - for <div> to show error message for <input> 
+    * <div role="alert" aria-relevant="all">...</div> 
+      # role="alert"  -> readout dynamic content and make more semantic 
+      # aria-relevant="all" -> instruct screen reader to tell user to read out error message has left or added 
+  - add aria-required="true" to <input> if input is required 
+  - aria-valuemin, aria-valuemax  -> for min/max values in <input> required 
+  - to use non <label> element as <label> -> aria-describedby 
+  - when enabling/disabling <input> based on some actions 
+    * add a <p> give it aria-live="assertive" and hide it using absolute positioning 
+    * update it's content using useRef when input is enabled/disabled and true/false aria-disabled in input 
+  - give role="button" and tabindex="0" for <div> using as <button> 
+  - if you want anything for screen reader to not read out -> aria-hidden="true"
+  - <ul role="tablist">  -> role "tablist" and "tab" used to make series to give more meaning to screen readers
+      <li
+        class="active"
+        role="tab"
+        aria-selected="true"  -> control using useRef
+        aria-setsize="2"      -> tell the this tab is in a series and series has 2 elements
+        aria-posinset="1"     -> position of this tab in series, screen reader will readout -> item 1 of 2
+        tabindex="0">
+        Tab 1
+      </li>
+      <li
+        role="tab"
+        aria-selected="false"
+        aria-setsize="2"
+        aria-posinset="2"
+        tabindex="0">
+        Tab 2
+      </li>
+    </ul> 
+-> when you are working with video/audio read -> "accessible multimedia"
+-> apart from onmousedown/onmouseup  also add ontouchstart/ontouchend 
+-> <meta name="viewport" content="width=device-width; user-scalable=yes" />
+  * content="width=device-width  -> content size based on device size 
+  * user-scalable=yes  -> enables zoom on webiste, if disabling zoom then give feature to user to increase size of text/images 
+-> avoid using too much <input> on mobile instead use <select> with "other" option where user can type - typing is annoying of mobile 
+-> for grouping widgets like menu use tabIndex="0" for parent and tabIndex="-1" to all descendents to that children are only accessible via arrow 
+-> use onkeydown instead of onkeypress 
+-> add onkeydown event along with onclick 
+-> always prefere semantics over wai-aria 
+-> don't add autoplay to videos 
+-> use less animations 
+->   <link
+    href="alternate1.css"
+    rel="alternate stylesheet"   -> providing alternative stylesheet browser based on user can choose the best one 
+    title="Alternate One" />
+-> use prefers-reduced-motion in @media query 

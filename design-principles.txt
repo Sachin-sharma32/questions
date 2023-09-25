@@ -1,0 +1,19 @@
+Q. what is SOLID
+Q. for what type of programming SOLID was designed for
+Q. explain S in SOLID
+Q. explain O in SOLID
+Q. explain L in SOLID with shapes example
+Q. explain I in SOLID with remote control example
+Q. explain D in SOLID with light switch example
+
+Q. 5 things you do for code documentation (naming, comment, typescript, doctype, chatgpt)
+Q. 7 things you do for debugging
+
+DEBUGGING
+-> ESLint
+-> typescript
+-> error boundary
+-> <StrictMode>
+-> react devtools
+-> console.log()
+-> browser devtools

@@ -1,0 +1,153 @@
+-> SQL - used for accessing and manipulating database
+-> Structured Query Language
+-> there are different versions of sql but they all support major commands to comply to ANSI (American National Standards Institute)
+-> SQL is used with RDBMS database - MySQL, PostGres
+-> data in RDBMS is stored in tables
+-> table contains rows and columns
+-> tables is broken up into fields (columns - id,name,marks)
+-> record - horizontal entry in table (rows - 1,sachin,100)
+-> database consists of many tables 
+-> table is identified by a name
+-> Statements -> select * from Customers;
+-> sql statements are not case sensitive
+-> DBMS - software which is used to access database
+-> DBMS -> RDBMS (postgres, mysql), NoSQl (mongodb)
+-> SQL interacts with relational database
+-> download mySQL RDBMS 
+-> create a new connection in mySQL
+
+$ create database {name};
+$ drop database {name};  -> delete
+$ use {databaseName} -> from here we will be working with {databaseName} database
+$ create table student(
+    id int primary key,  -> name datatype constraint,  primary key - unique and not null
+    name varchar(50),
+    age int not null
+)
+$ insert into student values(1,"sachin",22);
+$ select * from student;  (view table)
+
+-> data types 
+  * char -> reserves given length in memory
+  * varchar -> only reserves as per the characters
+  * blob -> used to store large strings like an entire file
+  * int 
+  * tinyint
+  * bigint
+  * bit 
+    - bit(1) -> can store 0 or 1
+    - bit(2) -> can store 01, 10, 00, 11
+  * float
+  * double
+  * boolean
+  * date
+
+-> signed & unsigned 
+  * unsigned is used to increase range
+  * id TINYINT UNSIGNED
+
+-> type of commands
+  * DDL (data definition language) -> create, alter, rename, truncate, drop
+  * DQL (data query language) -> select
+  * DML (data manipulation language) -> insert, update, delete
+  * DCL (data control language) -> grant access to users (who can access which part of database)
+  * TCL (Transaction Control language) - commit and rollbacks
+-> mostly you will use DDL, DQL, DML
+
+$ create database if not exists college;
+$ drop database if exists college;
+$ show databases;  (show all databases on our server)
+$ show tables;  (show tables in our current database)
+
+$ insert into college (id, name) values (1,"sachin"), (2,"tim");
+
+-> keys - special columns
+  * primary key - there can only be 1
+  * foreign key 
+    - it is a column which points to the primary key of other table
+    - there can be duplicate foreign keys in table and it can be null
+
+-> constraints
+  * not null 
+  * unique 
+  * primary key
+  * foreign key
+  * default
+    - salary INT DEFAULT 35000
+  * check 
+    - city VARCHAR(50),
+      age INT, 
+      CONSTRAINT CHECK (age >= 18 AND city = "Delhi")
+    - age INT CHECK (age >= 18)
+    
+
+-> we can also define primary key 1 other way at the end
+  * PRIMARY KEY (id)
+
+-> combination of 2 columns as primary key
+  * PRIMARY KEY (id,name)
+  * id and name can be duplicate, but their combination cannot be
+
+-> foreign key
+  * create table temp(
+    customer_id int,
+    FOREIGN KEY (customer_id) references customer(id)  -> references "id" field of "customer" table
+  )
+
+$ select id,name from student; 
+$ select distinct name from student;  (unique)
+$ select * from student where age >= 18 OR city = "Mumbai";
+$ select * from student where age BETWEEN 20 and 25;
+$ select * from student where city IN ("Delhi", "Mumbai");
+$ select * from student where city NOT IN ("Delhi", "Mumbai");
+
+$ select * from student where age >= 18 LIMIT 3;  (only show 3 rows)
+$ select * from student ORDER BY age ASC;  (ascending order)
+
+-> Aggregate functions - MIN,MAX,AVG,COUNT
+  * select MAX(age) from students;
+
+$ select city, count(name) from student GROUP BY city;  (count number of students in each city)
+
+-> "having" clause used to apply conditions on groups 
+  $ select city, count(name) from student GROUP BY city HAVING avg(age) >= 18;  
+
+$ set sql_safe_updates = 0;  (disable safe mode, now we can make changes to out table)
+
+-> update 
+  $ UPDATE student 
+    SET grade = "O"
+    WHERE grade = "A";
+
+$ UPDATE student 
+  SET marks = marks + 1;
+
+-> delete 
+  $ DELETE FROM student
+    WHERE marks < 33;
+
+-> EER Diagram (show relations between different tables)
+  * database (from top bar) -> reverse engineer
+
+-> parent table - which is being referenced
+-> child table - which is referencing other table
+
+-> cascading
+  * customer_id INT,
+    FOREIGN KEY (customer_id) references customer(id)
+    ON DELETE CASCADE  (when parent row is deleted then delete this row)
+    ON UPDATE CASCADE  (when parent row is updated then update this row)
+
+-> alter - change the schema of the table
+  * alter table student
+    add column sport;
+  * drop column sport;
+  * change column sport activity varchar(50) not null;
+  * modify sport char(50) not null;
+
+  * alter table student 
+    rename to children;
+
+-> 
+
+

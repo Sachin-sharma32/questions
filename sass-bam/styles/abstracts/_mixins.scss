@@ -1,0 +1,13 @@
+@mixin respond($breadpoint) {
+  @if $breadpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+}
+
+@mixin myButton {
+  background: #000000;
+  color: white;
+  border: 2px solid orange;
+}

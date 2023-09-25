@@ -1,0 +1,145 @@
+Q. Is javascript backward or forward compatible
+Q. How to solve forward compatibility
+Q. can we redeclare a variable in let/var/const
+Q. can we declare variable without let/var/const, if we can then how can we solve this issue
+Q. what is dynamically and statically typed language
+Q. variable name rules
+Q. what is the "case" name in javascript
+Q. what are the 2 types of data type in js, explain their types
+Q. what is undefined and null in js
+Q. what is type conversion
+Q. convert string/number to number/string
+Q. What is type coersion 
+Q. what is template literals in js
+Q. difference between == and ===
+Q. Name all 5 false values
+Q. what is ternary operator
+Q. && || vs & |
+Q. are all reference data type "object type" in js
+Q. can array have different datatype
+Q. can we change object type values if we declare it with const, can we reinitialized it
+Q. why .shift and .unshift slower than .pop .push
+Q. let num1 = 2; let num2 = num1;  if we change num1 will num2 change, why, what about object type?
+Q. arr1 === arr2, if declared seprately, what if arr2 = arr1.
+Q. which memory stores premitive and which one stores reference dt values
+Q. which memory creates copy
+Q. how stack and queue are used to link reference dt
+Q. what is spread operator in object type
+Q. for of vs for in loop array
+Q. what is array destructuring
+Q. how to use spread operator in array destructuring
+Q. 2 ways to access object values
+Q. how to use for in loop to access object's key and value
+Q. make array of keys and values of object
+Q. what is computed properties in js, use string concatination in it.
+Q. what is object destructuring, how to rename variable name.
+Q. how to destructure array of objects
+Q. what is hosting in js
+Q. which one is hoisted - declaration or initilization (or assignment) 
+Q. is variable/fn declared with let/const are also hoisted
+Q. does js allow memory to variables before executing anything, if so then what is the value assigned to it
+Q. what is temporal dead zone, is is related to hoisting of let/const
+Q. 3 types of fn in 
+Q. what is pass by value and pass by reference, which dt belong to these categories
+Q. how does "this" keyword behaves in arrow function
+Q. what is lexical scope of variable/fn
+Q. what is block scope and function scope, which category does let/var/const belong.
+Q. what is default parameter, rest parameter and parameter destructuring in fn
+Q. what is callback fn
+Q. what is the fn called which accepts a callback fn as argument
+Q. what is foreach, map, filter, reduce, find, every, some
+Q. what one point make sets different from array
+Q. make a set, add element to it, find if set has an element
+Q. make set from a array
+Q. what is the main difference between map and object 
+Q. make a map, set values to it
+Q. make map out of object
+Q. what is optional chaining in object
+Q. what does "this" points to or represents in js
+Q. what are the 2 ways of making methods inside object
+Q. use method in object and use this keyword in it
+Q. what is call method
+Q. use call method to bind a method of one object to other object, that method should also accept an argument
+Q. what is the only difference b/w call and apply method
+Q. what is the only difference b/w call and bind method
+Q. what are primitive/object and functions called inside obj/class
+
+Q. what is __proto__ or [[ProtoType]], how to create it  
+Q. what is prototype of fn
+Q. on which type of fn fn.prototype works
+Q. what are the 2 properties of new keyword
+Q. Explain all 6 step to transition from object to classes
+    hint -> 1) fn, 2) fn out, 3) __proto__, 4) Prototype, 5) new keyword, 6) constructor, 7) class
+Q. what is class inheritence and super keyword
+Q. are classes fake in javascript
+Q. what is the only thing which make getter different from method
+Q. what are static methods and properties in classes
+
+Q. 4 reasons which makes fn "first class functions" in javascript
+
+Q. where does all js code is executed
+Q. what is global execution context in call stack
+Q. does the code in execution context run line by line
+Q. does a new execution context is create for a function when it is called in GEC
+Q. where does this new execution context is place above or below
+Q. what happen to this execution context after fn has executed 
+Q. what happen to GEC when all code has executed
+Q. which one of the 2 broswer feature provides call stack 
+Q. which on of the 2 broswer feature provides access to other browser functionality like local storage, setTimeout etc
+Q. is DOM a part of javascript or is a broswer
+Q. which object allow us to use web API features in js, what is the name of that object
+Q. what is callback queue, what happens when js encounters callback fn inside GEC
+Q. does callbacks in callback queue are push inside stack after all code in GEC has execute
+Q. how is callback queue, event loop are used to push callbacks code inside call stack like timeout
+Q. which is microtask queue, which type of callbacks goes inside it , callback vs microtask queue which one has higher priority
+Q. if there are multiple callbacks inside a queue then do all of them get pushed inside call stack or one of them is push and executed and them other is pushed
+
+Q. explain high vs low level language 
+Q. what is javascript runtime
+Q. difference between interpreted and compiled language (friends with different language example).
+Q. which of the 2 type of languages produce executable file
+Q. what are closures, how js uses broswers heap
+Q. what is automatic garbage collection, which type of dt it works on, does js does that
+Q. 1 main difference between week map/set and map/set 
+
+Q. what is ment by parsing of html
+Q. where should we keep normal script tab in html
+Q. why noraml script is time consuming
+Q. what is the use of async in <script>
+Q. what is the use of defer in <script>
+
+Q. is js single threaded
+Q. what is event capturing
+Q. how to enable event capturing in normal javascript
+Q. what is event bubbling
+Q. which is the default behavour of events in js, bubbling or capturing
+Q. what is event delegation
+
+Q. js is synchronous or asynchronous
+Q. what is the only problem with callback hell
+Q. what are the 3 stages of promise
+Q. what can be combined with promises to solve callback hell
+Q. which keyword is used to make any fn asynchronous
+Q. how to make a code behave synchronously inside an asynchronous fn
+Q. how to handle error inside asynchronous code
+Q. explain 3 ways of writing export and 3 ways ofr writing import statement in js
+
+Q. 2 features of "use strict" in javascript
+
+Q. what is memoization, give example
+Q. what is prototype design pattern
+Q. what is prototypal inheritance 
+
+
+-------------------------------------------
+Q. what are the 5 steps in JIT compilation
+Q. what is abstract syntax tree
+Q. what is BOM (1point) 
+Q. does all broswer provide same BOM features 
+Q. what is currying, give discount example
+Q. what is generator fn, give example
+Q. make ia IIFE function
+Q. write a promise in javascript
+Q. isNaN('1') 
+Q. isNaN(true)
+Q. isNaN(false)

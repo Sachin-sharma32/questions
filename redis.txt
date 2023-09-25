@@ -1,0 +1,43 @@
+Q. what type of database redis is
+Q. how redis stores data
+Q. how redis is different from other databases in terms of where they run 
+Q. what advantage and disadvantage redis gets from running in memory
+Q. how redis is generally used
+Q. which 2 type of data we should cache using redis
+
+TERMINAL
+-> redis-start - start redis server
+-> redis-cli - access redis 
+-> quit
+Q. set key-value 
+Q. get key-value 
+Q. in which format data is stored in redis
+Q. delete key-value 
+Q. check if a key exists 
+Q. get all keys  
+Q. clear cache
+-> clear
+Q. check expiration of a key 
+Q. set expiration of a key 
+Q. set expiration duration key creation 
+
+Q. push from left/right in list 
+Q. get all elements in list
+Q. remove from left/right in list
+
+Q. what are sets in redis 
+Q. add item in set  
+Q. get all items in set
+Q. remove item from set 
+
+Q. what are hash in redis
+Q. does hashes support nasting
+Q. set item in hash 
+Q. get value in hash
+Q. get all key-values of a hash
+Q. delete a key-value in hash
+Q. check if a key-value exists
+
+# see redis folder that's it
+
+

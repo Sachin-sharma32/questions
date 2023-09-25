@@ -1,0 +1,22 @@
+Q. what is git 
+Q. 3 types of version control system , which one is git 
+Q. in which folder git database is stored 
+Q. which directory is copied when you git clone 
+Q. what are the 3 states in git 
+Q. how git versioning work
+Q. what is --system --global --local
+Q. work of - git init, git add, git commit
+Q. difference between staging and committing
+Q. how to check if files are added to staging area
+Q. how to prevent file from adding in staging area
+Q. how to ignore -> text file, don't ignore index.txt, ignore global index.js, ignore src folder, ignore all .js files and folder in "docs" at any level
+Q. show commit history
+Q. how to pull latest changes from remote repo 
+Q. how to merge current branch into master
+
+
+//- other VCSs thinks of data in terms of files
+//- git thinks of data as "snapshot"
+//- if during particular commit the data of file don't change than instead of creating new snapshot for that file git links the previous snapshot for that file
+//- this is how git versioning work
+

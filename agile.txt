@@ -1,0 +1,94 @@
+Q. what is agile 
+Q. what is the focus of agile
+Q. what are the 3 key features of agile 
+Q. does agile follow a set plan 
+Q. is agile a framework or a mindset 
+Q. which is the most popular agile methodology
+Q. what are the 2 sceniros where we can use agile 
+Q. what is the traditional project management approach
+Q. what is waterfall
+Q. what are the 6 phases in waterfall method
+Q. what are the 2 situations where we can use waterfall method
+Q. what is hybrid project management approach
+Q. what is Agile scaling method
+Q. which is the most popular agile scaling framework 
+Q. what are the 4 values of agile
+Q. which is the most popular agile certification 
+Q. did you go through any training in your company, using which LMS, which technology
+Q. what is KT 
+Q. which methodology have you used at your company, explain all 17 steps 
+
+
+-> agile is a project management approach
+-> focus on incremental steps of completing project
+-> 3 key focus - quick delivery, adapting to change, collaboration with stakeholders
+-> does not follow a set plan 
+-> it is a mindset on how to get a project done 
+-> Scrum - most used agile methodology
+-> good for ongoing projects and projects where all details are not well known
+-> Waterfall - traditional project management approach
+-> waterfall - easier to plan and progress can be measured easily
+-> projects with strict budget and time and where less communicaion with stakeholder - go with waterfall 
+-> hybrid Agile-waterfall methodology - planning and designing in waterfall and development in agile 
+-> Agile Scaling methods - implement agile practices across multiple teams 
+-> Scaled Agile Framework (SAFe) - most popular agile scaling framework 
+-> Agile was established on 4 values and 12 principles 
+-> Agile values 
+  * right individuals
+  * get stuff done rather than planning and documentation
+  * maintaining contact with stakeholders
+  * adaption over rigidity 
+-> Certified Scrum Master - most popular Agile Certification 
+-> mandatory training and extra curricular activities in company
+
+
+------------------------------------------------
+DEVELOPMENT WORKFLOW 
+* check mail 
+* check slack for if some work has come or commets
+* check "Jira board" - stories (requirements) in your name are listed over there 
+* start working based on stories 
+* Agile methodology
+  # one scrum master manages the whole meeting
+  # sprint planning (meeting,not daily)
+    - one product owner write requirement (suggestions or changes) -> writes a story in jira board -> assign story to developer
+    - this sprint planning runs for 2 weeks (depends from project to project)
+    - sprint planning generally happens on friday so that from monday sprint can start
+    - generally 2-3 stories are assigned (each story takes around 2-3 days to complete)
+  # daily 15 min stand-up call (discuss progress, runs when sprint planning is started)
+    - discuss any blocker or challanges with scrum master
+  # Retro Meeting
+    - happens after a sprint is completed 
+    - take feedback and learnings from developers 
+* generally for frontend developer you get two tasks
+  - designing (css heavy) -> where css is more required, here you stay connected to design team a lot 
+  - UI development (javascript heavy) -> more about logic building with javascript
+* when story is assigned you create a branch with the same name as the name of story 
+* after making changes you generate a pull request (code reviewers review the code and accept pull request)
+* review comments are given if pull request is not accepted 
+* after the pull request is approved you can merge changes to main branch 
+* now the dev ops teams manages deployment
+
+--------------------------------------------------------------------
+TELL ME ABOUT YOUR PROJECT EXPERIENCE
+  * yuvti
+  * e-commerce
+  * add to cart, newletter, web sockets, stripe
+  * low level description
+  * team members
+  * your role
+  * challenge you faced (tell about learning new technology)
+
+-------------------------------VIDEOVERSE----------------------------
+-> helps content creators and enterprises to streamline content production process using AI and ML 
+-> intelligent and scalable video editing tools
+-> Maginfi - AI powered tool for creating highlights and short form videos in real-time
+-> work with OTT platform, sports broadcasters, e-sports, colleges
+
+-> I'm impressed by the company's commitment to innovation and its strong focus on employee development, which I believe will provide an excellent platform for my career growth."
+-> STAR (situation task action result)
+-----------------------------------------------------------------------------
+-> www.soch.com  (women's traditional online clothing store)
+-> aruva interiors (interior design company)
+-> we also helped setup multiple blogging websites for our customers, CMS, CRM, Employee management 
+-> gatha.com

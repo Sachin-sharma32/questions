@@ -1,0 +1,82 @@
+Q. what type of type checking does typescript do
+Q. what is the only difference between static type checking and dynamic type checking, in which category javascript and typescript belong to
+Q. what does typescript compiler does, what is meant by transpiling
+Q. what is type inference
+Q. what is downleveling in typescript
+Q. represent string, number, boolean, array, object types, array of string, array of object
+Q. 2 ways of defining array in typescript
+Q. represent these 4 types on function as argument and return type
+Q. what is contextual typing in anonyomous functions
+Q. what are optional properties in ts
+Q. what are union and intersection types in ts
+Q. if a union name Union contain type "Name" and "Age" which are also object types, if a object derived from Union has both Name and Age type value will we get error, what if we try to access values of object, how to fix this by making change to -> type Union = Name | Age
+Q. can i use .toUpperCase() if the union is string | number, if so then what is the one work around and what is the process called
+Q. represent  type alias
+Q. represent interfaces 
+Q. what is the only difference between type alias and interface
+Q. how to extend interface and type alias
+Q. what is type assertion/casting, does this mean that we know the type of variable better than typescript, which keyword is used
+Q. does assertion actually change the type of variable
+Q. what is Non-null type assertion, which keyword is used
+Q. what is literal type, use literal type with union
+Q. what is literal inference in objects, what are the 2 fixes to that, what does const means
+Q. which tsconfig.json flag issue error for "any" type
+
+narrowing (give example of)
+Q. typeof narrowing
+Q. truthiness narrowing
+Q. Equality narrowing
+Q. in operator narrowing
+Q. instance of narrowing, on what type of variables does it work
+Q. type predicate narrowing with help of fish bird example
+Q. explain discriminated unions with help of circle rectange shape example
+Q. explain "never" and exhaustive check with help of switch statement, combine discriminated unions in this example also
+
+Q. how to make a call signature from type alias
+Q. which feature is used to overload function and add properties to function, explain with the help of add function
+Q. give example of construct signature
+Q. what is the 1 difference between "any" and generic functions, give example
+Q. can we give any name instead of "Type" in generics
+Q. how to take array as generics argument
+Q. can a generic fn can take array and return single element
+Q. use generics in arrow function
+Q. what does <T,> indicate in generics
+Q. give example of generic function taking multiple "type" values, can it return any "type" of value
+Q. what is generic constraints, which keyword is used for it, give "length" example
+Q. what are optional parameter in functions
+Q. can we do anything with unknown type variable
+Q. what is the type of rest parameter
+Q. how to specify readonly properties in objects, how to make array readonly, which 2 ways to make array readonly
+Q. what are index signature, can we write custom types alongside index signature
+Q. what is the alternative to index signature
+Q. can we define other types in interface/type alias alongside index signature, if can then can we define different key:value pair from index signature
+Q. give example of generic object types, can object types take another interface/alias as <Type>
+Q. define a tuple type, which datatype it is used with, how to specify "rest" elements in tuple
+Q. does the sequence of defining type in tuple matter
+Q. can tuple be readonly, how to define readonly tuple
+Q. how does keyof helps in autocompletion
+Q. give example of indexed access type in typescript, use it with keyof operator
+Q. give example of conditional type
+Q. how to create a readonly type from an existing type, how is the Readonly<Type> implemented internally, which functionality does it use
+
+Q. what is the alternate to using enum in typescript
+Q. which is the type of LoginMode :
+    const LoginMode = {
+    name: "Sachin",
+    } as const;
+
+    type LoginMode = keyof typeof LoginMode;
+Q. why we are using "typeof" in above example
+
+Q. explain literal types and template literal types
+Q. use template literal types in interface/alias
+
+----- React Typescript -----
+Q. what is the difference between JSX.Element and React.ReactNode
+Q. do we have to define return type of react element
+Q. how to use React.FC with props
+Q. one reason why we should not use React.FC<Props>
+  * it accepts a children prop by default of React.ReactNode type even if the component don't require "children"
+
+
+

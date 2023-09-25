@@ -1,0 +1,130 @@
+Q. which component is pre-rendered
+Q. where is client component rendered, what about server component, what about hydration of both
+Q. where is dynamic data is fetched and when does client component uses this data
+Q. which component can fetch data dynamically based on user actions 
+Q. which component to use to fetch data which will not change 
+
+Q. does nextjs build frontend or full stack
+Q. what type of rendering nextjs does on reactjs
+Q. does nextjs automatically bundles and compiles reacts
+Q. what 2 types of routers nextjs currently supports
+Q. which type of routing nextjs uses 
+Q. how to create route in nextjs 
+Q. how to create nasted route 
+Q. which files makes the route accessable 
+Q. can we place components, stylesheets, dev-data anywhere inside app/
+-> sachin.com/dashboard/setting - what is url segment and url path
+Q. can use use app/ and page/ router together
+Q. which will have more priority
+Q. what is the default component created inside app/ client or server
+Q. what are the 3 strategies to render server components
+Q. where is data fetched on server components, client or server side 
+Q. benefits of server side data fetching in terms of sensitive data
+Q. how server side data fetching reduces client side bundle 
+Q. does server side data fetching reduces initial load time 
+Q. what is streaming in nextjs, how it achieves streaming 
+Q. which type of component is hydrated, why 
+Q. what is static rendering, which type of content it is used for
+q. what is dynamic rendering, which type of content it is used for
+Q. does dynamic rendering cache some static data
+Q. do we have to manually define whether to do static or dynamic rendering 
+
+Q. 4 ways to fetch data in nextjs
+Q. 3 data fetching methods nextjs provides 
+Q. where are route handlers defined
+// on server with "fetch" (see page.txt):
+    * by default data is cached
+    * revalidation: 2 ways - time based, on-demand (see page.txt)
+// on server with 3rd part library
+    * if that library is using "fetch" under the hood (axios) then it will be same as with "fetch"
+// on client with route handlers
+    * with route handlers data can be fetch on server and using in client component and send to client component after it is hydrated to preserver sensitive data
+    * server component don't need to call route handlers to fetch data since they can fetch data directly using async/await
+// on client with 3rd part library
+    * using react query
+Q. which file is used to achieve streaming
+Q. which components loading.js uses under the hood 
+Q. are client components rendered statically or dynamically on the client
+Q. can we fetch same data in multiple places in application using "fetch", if yes then why 
+Q. how to use 3rd party packages in server components
+Q. what is serialization
+Q. how can we pass fetched data from server to client component
+Q. why we cannot composite server components inside client component, how to solve this 
+Q. can server components contain client component 
+
+Q. what if we don't provide layout.js, template.js, loading.js etc. to nasted segment
+Q. what is the purpose of layout.js 
+Q. what is the behavior of layout.js in terms of state and re-rendering
+Q. what 2 things root layout.js must have 
+Q. can child layout.js contain html and body 
+Q. what is the purpose of template.js
+Q. what 2 things makes template.js different from layout.js
+Q. what is the use of template.js in terms of <Suspense>
+Q. how to add metadata in nextjs
+Q. what are the 2 ways for navigation in nextjs 
+Q. what is prefetching 
+Q. what one benefit <Link> has over useRouter
+Q. what is difference between <Link> and useRouter in terms of where they can be used
+Q. does prefetching work in development
+Q. does nextjs caches routes
+Q. which type of navigation nextjs uses hard or soft
+Q. 3 benefits of soft navigation
+
+Q. which folder is used to make routing group
+Q. what is the use of routing group
+Q. are routing groups included in url segment
+Q. can we give common layout.js etc to segments inside route groups
+Q. how to define dynamic route, catch all route  optional catch all route
+Q. difference between catch all and optional catch all route 
+Q. which file is used to handle errors, which react feature it uses under the hood
+Q. what is the use of parallel route in nextjs
+Q. what is intercepting route in nextjs 
+Q. what are middleware in nextjs
+Q. 3 project organization techniques in nextjs (_,@,src/)
+Q. what is internationalization in nextjs
+Q. 3 optimizations nextjs <Image> provides 
+Q. 1 optimization nextjs Fonts provides 
+Q. what is the use of Script in nextjs, 1 optimization it provides 
+Q. where do static assets live in nextjs, 1 optimization it provides
+Q. how to lazy load client components in nextjs (modal example)
+Q. how to access query parameter in dynamic route
+Q. in page router which method was used to run code server side 
+Q. in which folder do you define environment variable in nextjs
+
+-> in nextjs when fetching data with fetch() in server component the pre-render html will contain populated data from database or other api and it is cached by default until manually invalidated -> static site generation
+
+----------------------- REDUX ---------------------------
+Q. 1 benefit of using redux toolkit over redux
+Q, what are the 2 folder for redux toolkit 
+Q. where are slices used 
+Q. how are reducers created 
+Q. how to access/update value in slice's state
+Q. create a slice and store
+
+-------------------------- REACT QUERY -------------------------
+Q. which type of state react query works with
+Q. in which folder you define react query queries 
+Q. what is the naming convention used for query files 
+Q. what is the naming convention used for query functions
+Q. with method is used to post data using react query 
+Q. what are the 3 argument useMutation accepts 
+Q. create a mutation and use it
+Q. which method is used to fetch data
+Q. create a query function, it should run only if postId is available, filter server data and use it
+Q. how to make data stale, refetch data when component mount and when window is focused 
+Q. how to run a query if other query success
+Q. which method is used for infinite fetch data
+
+
+------------------------- OTHER TOOLS I HAVE WORKED WITH -----------------------
+-> sanity
+-> tailwindcss
+-> material UI 
+-> styled components
+-> framer motion
+-> gsap 
+-> NextAuth 
+-> formik and yup
+-> nodemailer
+
+

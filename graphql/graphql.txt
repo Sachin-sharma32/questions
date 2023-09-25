@@ -1,0 +1,5 @@
+-> query language 
+-> saves client's bandwidth by requesting only specific data from database as required 
+-> graphql solves this problem of REST API 
+-> apollo is a framework to run graphql server
+$ npm i @apollo/server graphql

@@ -1,0 +1,14 @@
+.highlight {
+  @include respond(phone) {
+    color: orange;
+  }
+}
+
+.formButton {
+  @include myButton;
+  font-size: $default-font-size;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}

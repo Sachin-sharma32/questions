@@ -1,0 +1,425 @@
+Q. what is a component (1points) (button, page)
+Q. what is 1 the naming rule for component
+Q. should a component "define" other component inside it, what is the better approach
+Q. is JSX required for react
+Q. how to display javascript inside jsx, what can be placed inside {}
+Q. why use {{}} in style attribute
+Q. 3 ways to conditionally render jsx
+Q. which method is used to render list in jsx
+Q. why we have to use key when using map method, explain using folder without name and refering them with number and deleting example
+Q. what are the 2 rules for key in react
+Q. why does react use if you don't provide key by default
+Q. what is the pitfall of using index as keys
+
+Q. what is the use of useState (1point)
+Q. what is the naming convention for hooks (1point)
+Q. can we write our own hooks
+Q. where should hooks be called
+Q. what if we want to use hooks inside conditional or loop
+Q. what is the name in react for "data that changes over time"
+Q. what is called "component-specific memory"
+Q. how to share state between components (1point)
+Q. how is data passed from parent to child (1point)
+Q. what is the process of moving the state to parent called
+Q. should we generate keys dynamically
+Q. does the keys can be received as props in component
+Q. explain the 5 steps of implementing UI in react
+Q. should each component do only one thing, what if it exceeds and does multiple things
+Q. what is top-down and bottom-up approach, which one to use when
+Q. what is one way data flow in react
+Q. what is two way data binding, how to implement it
+
+Q. which is more stricter html or jsx
+Q. what are the 3 rules for jsx
+Q. why there can't be multiple root elements in jsx
+Q. are props immutable, what should be the only way to mutate props
+Q. can we put a number in left side of &&, if not then why
+Q. why to use fragments instead of div
+
+Q. 2 things which make functions pure in react, should components be pure in react
+Q. is <React.StrictMode> enabled by default in nextjs
+q. what is local mutation in react
+Q. what are side effects in react, are they executed during rendering, which hook is used to perform side effect
+
+Q. what is 1 the naming convention of event handlers in react
+Q. why do we not add () to event handlers
+Q. what is the 1 naming convention for event handlers passed as props
+Q. what is event propagation (1point), how to stop it
+Q. what naming convention is used to make a event handlers follow "capture" phase 
+Q. how to prevent default behavior of browsers in event handlers
+Q. does event handlers produces side effects
+Q. are event handlers pure functions in react
+
+Q. what is the 1 thing that triggers component re-render in react
+Q. 2 reasons why we cannot use regular variables to update UI, which hook solves this
+Q. does each component has a separate state
+Q. does each copy of component has separate state
+
+Q. what are the 3 step of serving the ui to the browser
+Q. what are the 2 reasons for a component to render
+Q. what is Rendering in react
+Q. which component does react calls during initial and re-render respectively
+Q. what is the behavior of react towards dom during initial and re-render in rendering phase
+Q. in which step during the react makes changes in the dom or create the dom during initial render
+Q. what will browser do after all the 3 steps of serving ui is completed
+Q. what will happen if you setState(num + 1) 3 times in a onClick handler, initial value is 0, explain why, what is state snapshot says
+
+Q. what is batching in react
+Q. does react batch across multiple events like click
+Q. what is updater function 
+Q.  <button onClick={() => {
+        setNumber(number + 5);
+        setNumber(n => n + 1);
+      }}>Increase the number</button>, what will "number" be in next render
+Q. when is the 1 naming convention of updater fn argument
+
+Q. is it true that object are not nasted, explain with example
+Q. which library to use if we want to update objects in the "mutatable" format
+Q. does mutation work the same way for array as with object
+Q. if we create new array using spread operator from state which contains object, does it mutate the new array's objects, why, which array method can be used to actually update objects inside array
+Q. does immur work with array
+
+Q. what are the 2 approaches for updating UI
+Q. in react what approach we take to update the UI
+Q. what is storybook (1point)
+Q. what is the process of removing nasting called
+Q. what is the problem with mirror props in react
+Q. what is controlled and uncontrolled components in react (1point), which one is more flexible
+Q. what is the principle of single source of truth in react (1point)
+Q. what will happen to the state of components if you remove the component and add it back later
+Q. does the same component at the same position in dom tree preserve the state (border, no border)
+Q. does different components at the same position preserve the state, does it reset the state of subtree as well
+Q. what are the 2 ways to reset state when switching between same component at same position in dom tree
+
+Q. can we use reducers with immer
+Q. compare useState and useReducer on the basis of code size and readability
+
+Q. what is the problem of prop drilling
+Q. what is the use of useContext, what is it alternative to 
+
+Q. what is meant by escape hatch in react
+Q. what 1 point makes useRef different from useState, which method is used to access current value of ref
+Q. what 1 point makes useRef similar to useState
+Q. is useRef a javascript object
+Q. how useRef compares to useState in terms of snapshots, mutation
+Q. what is the most common use case of useRef
+Q. how to scrollInoView using useRef
+Q. can we use ref in other component by passing it as props, which react feature solves this issue
+Q. which hook is used if I want to restrict parent to only apply specific dom manipulation methods on it when parent passed the ref to child
+Q. does react attach refs to element during which stage and why
+Q. what is the value of ref.current during rendering
+Q. should we manually add/remove elements and children in dom using useRef, why not
+
+Q. when does useEffect run, before/during/after rendering
+Q. what does side effects do (1point)
+Q. what is the 1 difference between Effects and events
+Q. does Effects run after commit stage and after the browser rendering
+Q. is useEffect a escape hatch
+Q. what are the 3 parts of useEffect
+Q. should we not do anything with dom which it is rendering with useRef, when and where should we do it than
+Q. does useState immediately inside useEffect cause infinite loop, why
+Q. what does useEffect dependencies do (1point)
+Q. should all dependencies  change or only one for running useEffect callback during re-render
+Q. should we add ref or useState as a useEffect dependency, what if the ref,state is passed from parent, are they called always stable dependencies
+Q. what is meant by mounting of component
+Q. does useEffect is called twice in development after re-render, what about production
+Q. when does cleanup functions run, explain with help of - initial render, 2 time skip, 3rd time run, what if user navigate away after 3rd time useEffect run
+Q. should we use useEffect to handle user event, where should we do it
+Q. should we use useEffect to transform data, eg. filtering, where should we do it
+Q. which hook should we use to cache expensive computation
+
+-------------------------------------------------------------
+Q. what are the 3 stages in lifecycle of component
+Q. when the component is not on the screen will it unmount
+Q. if the dependencies don't change then will the useEffect stay connected to the same room for example
+Q. should we separate unrelated Effects in different useEffects
+Q. what 3 are reactive values 
+Q. what option I have if I don't want to add components variables as dependencies to tell react that they will never change during re-render
+Q. why should we not add objects or function as useEffect dependencies
+Q. is the logic inside event handler reactive based on reactive values
+Q. what are Effect Event, which hook is used to separate events from effects, explain with help of chat room, theme example
+Q. can we call effect event outside useEffect
+Q can we pass effect event as props
+Q. since objects and functions will be different after every re-render even if their values don't change and we should not use them as dependencies of useEffect, how to solve this
+Q. what if the parent sends an object as props, how to avoid unnecessary re-renders in this case, what about functions
+
+Q. what is use of custom hooks (1point)
+Q. does custom hooks extracts duplicate code or logic
+Q. which custom function should start with name "use" (1point)
+Q. is the state of custom hook duplicated or re-used if 2 components use it
+Q. does custom hooks re-render if the component which is using it re-render  
+Q. can custom hooks cause re-render of the component using it
+Q. which react hook should be most often extracted into custom hook
+
+Q. does a child component re-render if it's parent re-render
+Q. what are the only 2 situations where you should use useCallback
+Q. does excessive memoization harm performance
+Q. which is a better option, 1) memoizing function which is passed as dependency to useEffect, 2) moving the fn inside useEffect
+Q. how to optimize custom hooks with useCallback (1point)
+
+Q. what is concurrency in react (1point), which 2 hook is used to handler concurrency in react 
+Q. what is the use of useTransition hook, explain with help of filtering 1000's of products while typing in input
+Q. what are the 2 values useTransition return
+Q. what is meant by debouncing and throttling, explain with help of typing example
+Q. how to achieve debouncing in react, typing in input and fetching data from server example, why cleanup function with clearTimeout is very important in this case
+Q. what is the only difference between useTransition and useDeferredValue, explain with the same example (useTransition example)
+Q. what is the one parameter useDeferredValue accept
+
+Q. explain the importance of aria-describeby attribute for accessability with example
+Q. what does useId hook does
+Q. should we use unique id generated by useId as list keys, if not then why
+Q. what is the only difference between useLayoutEffect and useEffect in of when it runs
+Q. why we should rarely use useLayoutEffect
+Q. what is the use of Profiler component in react, does it also measure the performance of children as well
+Q. what are the 2 props of Profiler component
+
+Q. what are the 3 development only behavior <StrictMode> provides
+Q. why does StrictMode renders the component multiple times
+Q. does StrictMode work in production
+Q. does strictMode accepts any props
+
+Q. what is the benefit of SSR
+Q. what is "hydration" related to SSR
+Q. does all the SSR generate html is sent to the client at once, which react component solves this problem
+Q. does hydration happen for the entire app at once, what is the problem with that
+Q. how does Suspense solve this problem (1point)
+Q. does Selective hydration happen sync or async
+Q. will the bundle whose UI is clicked be hydrated before others
+Q. what is the only prop that Suspense accepts
+
+Q. what is the only difference between startTransition and useTransition in terms of where it can be used
+
+Q. does createPortal physically move the element to the new parent, does elements in portal acts like a normal child of actual parent (where it is written)
+Q. what are the 2 parameters createPortal accepts
+Q. does a portal escapes the styling of all the parents, does it helps to make the modal sticky
+Q. can createPortal help of render custom elements inside 3red party libraries
+
+Q. what is composition in react
+Q. can functional components create error boundary
+Q. does error boundary also catch error in children
+Q. does error boundary work with server side rendered component
+Q. does error boundary catch error in it's code itself
+Q. does it work with eventHandler or async code
+Q. is HOC and render props replaced by Custom Hooks
+
+q. what is virtual dom in react (1point)
+Q. does react update the dom or virtual dom when state change
+Q. why can't we just update the real dom
+Q. what is virtual dom diffing
+Q. what is the entire process in these 4 lines called
+
+-------------------------------------------
+Q. explain immutation and mutation in useState with help of premitive and reference data types
+Q. why mutation of object and arrays is bad (1point)
+Q. explain how to use single useState and single handler for multiple fields
+Q. what are the 5 steps to decleratively implement UI in react
+Q. what are the 5 principle for structuring a state ([x,y], [sending,sent], [firstname,lastname], [data,index], [nasted, flat])
+Q. create a increment/decrement component with useReducer
+Q. give example of theme context 
+Q. create add to cart with useContext and useReducer
+Q. give example of forwardRef and useImperativeHandle to allow parent to access focus() method of child ref
+Q. does state update sync/async inside handler function, what is the use of flushSync, is it recommended to use it
+Q. difference between no dependency, empty dependency and no-empty dependency
+Q. when should we use cleanup function in useEffect, what should the cleanup function do, explain with help of 2 connecting... console messages when going to other screen and comming back
+Q. explain the 3 downfalls of fetching data in useEffect, how nextjs solve the first problem, which library solves the 3rd problem
+Q. give example of useMemo
+Q. in which stage useMemo run
+Q. give example of React.memo and useCallback
+Q. what is the only difference between useMemo and useCallback
+Q. what are synthetic events in react
+
+-----------------------------------------------------------------------------------------------------------------
+-> using css pre-processors like sass,less,scss,stylus and postcss plugins is not recommended by tailwind coz with tailwind you write very little css 
+-> npx tailwindcss -o build.css --minify  (minify css before production)
+-> vendor prefixes like done by autoprefixer is automatically done by tailwind 
+-> dark:
+-> first: last:
+-> disabled: invalid: focus: 
+-> group/{name1}  group/{name2}  group-hover/{name1}:bg-blue-500
+-> peer peer-hover:bg-black-500
+-> peer/{name1} peer/{name2} 
+-> before: after: 
+-> file:
+-> marker: 
+-> selection: 
+-> first-line: first-letter: 
+-> motion-reduce:hidden  motion-safe: 
+-> contrast-more: 
+-> landscape: portrait: 
+-> print:hidden
+-> bg-black/25
+-> supports-[display:grid]:grid 
+-> aria-checked:bg-blue-500,  aria-* 
+-> items.map((item)=>(
+  <li> className="[&:nth-child(3)]:underline">{item}</li>  last-of-type, odd:, even:, empty:, 
+  ))
+-> [&_p]:mt-4  -> select all <p> inside this element 
+-> style.css
+  * @layer utilities{
+    .content-auto{
+      content-visibility:auto;
+    }
+  }
+  lg:content-auto
+
+-> checked: indeterminate: default:
+-> required: valid: invalid: in-range: out-of-range: placeholder-shown: autofill: read-only: 
+-> md:max-xl:flex 
+-> can define custom and arbitary values for everything in tailwind 
+-> min-[320px]:flex 
+-> @layer components{   -> don't use it much coz it will make css bundle bigger
+    .btn-primary{
+      @apply py-2 mt-2
+    }
+  }
+  className="btn-primary"
+
+-> aspect-square
+-> className="container"  -> responsive element 
+-> accent-pink-500/25 -> for form elements 
+-> appearance-none -> for form elements 
+-> cursor-[url(hand.cur),_pointer]
+-> caret-pink-500  -> for inputs
+-> resize-none  -> text area 
+-> snap-x -> on carousel's container 
+-> scroll-ml-6/scroll-pl-6  -> carousels' items
+-> snap-start/-end/-center  -> carousel's items
+-> touch-auto
+-> select-all 
+-> will-change 
+-> origin-center/top/top-left
+-> animation-ping/pulse/spin
+-> table-fixed/auto 
+-> caption-bottom/top
+-> backdrop-blur-sm 
+-> divide-x  -> add border between children 
+-> ring-2 
+-> tracking-tight 
+-> line-clamp-3
+-> leading-3 
+-> list-image-[url(checkmark.png)]
+-> text-center/-justify
+-> decoration-blue-500 
+-> decoration-dotted 
+-> underline
+-> underline-offset-2
+-> truncate 
+-> indent-8
+-> whitespace-
+-> break-word 
+-> hyphens-auto
+-> spacing-x-4
+
+-> basis-1/4
+-> flex-none/-initial/-auto/-1
+-> grow-0
+-> shrink-0
+-> order-last
+-> col-span-4
+-> col-start-2 col-end-4
+-> col-span-4
+->  auto-cols-max
+-> content-start
+-> place-content-center 
+-> place-item-center 
+-> place-self-center 
+-> inset-x-0 top-0
+-> box-decoration-clone 
+-> 
+
+-> bg-[--my-color]
+-> [mark-type:luminance]  -> use property which tailwind don't support 
+-> grid-cols-[1fr_500px_2fr]
+-> bg-[url('/what_a_rush.png')]
+-> className={String.raw`before:content-['hello\_world']`}   -> want to use "_" instead of blank space 
+-> @layer base{
+     h1{
+        @apply text-2xl;
+     }
+  }
+
+-> @layer components{
+    .card{
+      background-color: theme(colors.blue.500/75%)
+    }
+  }
+
+-> unused classes added in base, components and utilities will not be included in final css bundle 
+
+-> @media screen(sm){....}
+-> npx tailwindcss init --full 
+-> module.exports = {
+  presets: [     -> use your own base styles instead of tailwind's 
+    require('@acmecorp/base-tailwind-config')
+  ],
+  theme: {....},  ->  Project-specific customizations
+  important: true,  -> give highest preference to tailwind classes
+   separator: '_'   -> text-center -> text_center
+}
+
+-> @config "./tailwind.site.config.js";  -> if using multiple configuration files 
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+
+-> function Button({ color, children }) {
+  const colorVariants = {
+    blue: 'bg-blue-600 hover:bg-blue-500 text-white',
+    red: 'bg-red-500 hover:bg-red-400 text-white',
+    yellow: 'bg-yellow-300 hover:bg-yellow-400 text-black',
+  }
+
+  return (
+    <button className={`${colorVariants[color]} ...`}>
+      {children}
+    </button>
+  )
+}
+
+-> theme.extend -> add new default theme 
+-> theme -> override default theme
+
+->  theme: {
+    fill: ({ theme }) => ({   -> referencing other values 
+      gray: theme('colors.gray')
+    })
+  }
+
+-> const defaultTheme = require('tailwindcss/defaultTheme')
+   theme:{
+    screens:{
+      'xs':'452px',
+      ...defaultTheme.screens   -> referencing default values 
+    }
+   }
+
+-> '2xl': {'max': '1535px'}
+-> '2xl': '1535px' 
+-> 'sm': {'min':'640px', 'max':'767px'}
+-> 'sm': [
+   {'min':'640px', 'max':'767px'},
+   {'min':'800px'}
+]
+
+-> 'white': '#ffffff',    -> 'white'(new), white(overriding)
+-> const colors = require('tailwindcss/colors')
+   primary: colors.black.500
+-> 'tahiti': {
+     100: '#cffafe',
+     200: '#a5f3fc',
+  }
+-> 'tahiti': {
+     light: '#cffafe',
+     dark: '#a5f3fc',
+  }
+
+-> plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/container-queries'),
+  ]
+-> className="prose lg:prose-xl"
+-> add role="list" in <ul> coz tailwind removes base styles 
+
+

@@ -1,0 +1,87 @@
+DOCKERISING
+Q. why use docker (friend, github)
+Q. what is docker used to create
+Q. what 2 things a container contains
+Q. what is Dockerfile used to create 
+Q. what is docker image used for
+Q. what does docker image contain
+Q. can we change files in docker image after it is created
+Q. what is a docker container
+Q. give are the 2 use of docker volumes 
+Q. where does docker volumes stores data of a container - inside or outside container's filesystem
+Q. what is the use of volumes during development
+Q. what was used to do all this before docker
+Q. what is virtualization 
+Q. benefit of containerization over virtualization
+Q. what is docker daemon/engine
+Q. what is docker hub
+Q. what is docker cli 
+# see Dockerfile and .dockerignore in docker-react and docker-nodejs folder that's it
+Q. give 2 uses of docker-compose
+
+
+Q. what is jenkins 
+Q. what is the use of ci/cd server
+Q. where do we need to install jenkins
+Q. what is the use of key-value pair in EC2
+Q. what is the use of security group in EC2 
+Q. what is Putty
+Q. in which file ci/cd pipeline defined 
+Q. which language Jenkinsfile uses
+
+JENKINS ON AWS 
+-> create key pair in EC2 to provide authentication when installing Jenkins
+# EC2 -> network & security -> key paris
+
+-> create a security group to control traffic from/into your instance
+# EC2 -> network & security -> security groups
+# keep the default VPC 
+# add inbound rule -> type (SSH), source type (custom), source (you-ip/32 -> 32 means single IP address) (allow SSH traffic from your computer)
+# add inbound rule -> type (HTTP) (allow traffic from anywhere)
+# add inbound rule -> type (custom TCP -> allow traffic on specific port number), port range (8080)
+# create 
+
+-> launch EC2 server
+# select the key pair
+# launch 
+
+-> connecting to your EC2 instance from your computer using Putty
+# open putty -> sessions -> hostname (past your EC2's DNS name)
+# putty -> connection -> ssh -> auth -> credentials -> private key file for authentication (select you downloaded key pair file)
+# the window will ask "login as" -> ec2-user 
+
+-> installing jenkins on EC2
+# sudo yum update -y  (to make sure everything is up to date in your EC2)
+# sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo   (required for jenkins)
+# sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key   (required for jenkins)
+# sudo yum upgrade 
+# sudo amazon-linux-extras install java-openjdk11 -y   (java installation step)
+# sudo dnf install java-11-amazon-corretto -y   (java installation step)
+# sudo systemctl enable jenkins   (enable jenkins to start at boot)
+# sudo systemctl start jenkins   (start jenkins)
+# sudo systemctl status jenkins   (check if jenkins is running)
+JENKINS IS NOW RUNNING ON YOUR instance
+
+CONFIGURE JENKINS
+-> go to http://instance-DNS:8080 
+-> sudo cat /var/lib/jenkins/secrets/initialAdminPassword  (see jenkins password)
+-> click - install suggested plugins
+-> on Jenkins dashboard click -> manage plugins -> plugins -> available plugins -> (install "amazon EC2" plugin)
+
+-> jenkins dashboard -> clouds -> new cloud:
+# Amazon Ec2 credentials -> add -> jenkins:
+* kind -> aws credentials 
+* access key Id and secret access key (from aws dashboard)
+* click add 
+# Region (of EC2 instance)
+# EC2 key pair -> add -> jenkins:
+* kind -> ssh username with private key
+* username -> ec2-user
+* private key -> enter directly (paste the content of key pair file here)
+* click add
+# test connection 
+# click add
+JENKINS IS NOW SETUP WITH YOUR INSTANCE 
+
+-> blue ocean plugin - for better jenkins ui 

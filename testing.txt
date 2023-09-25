@@ -1,0 +1,44 @@
+Q. why choose unit test over integration and E2E test
+Q. why choose integration test over E2E
+Q. which test give more code assurance and coverage
+Q. which test is like actual human 
+Q. for what part should we write unit tests
+Q. which type of test should we write the most
+Q. which 2 libraries Jest replaces for testing nodejs
+Q. what is supertest
+Q. what is puppeteer
+
+
+REACT TESTING 
+Q. manual testing vs automated testing 
+Q. is jest used for 
+Q. what does rtl do 
+Q. what is test driven architecture 
+Q. what are the there places jest looks for test files 
+Q. write a test to check if "Greet" text is present on <Greet/> component
+Q. how to test only specific test or skip specific test
+Q. how to group test together
+Q. how to run only specific group or skip specific group 
+Q. can we nest group inside group
+Q. which fn can be used instead of "test()" 
+Q. what are the 4 thing to test
+Q. what 3 things to not test
+
+
+TESTING NODEJS 
+-> npm install --save-dev babel-cli babel-preset-env jest supertest superagent
+-> don't add app.listen in app.js which we will use for testing create a seperate "server.js" file for that, coz for testing jest will use it's own port
+
+-> "test": "cross-env NODE_ENV=test jest --testTimeout=5000"  (package.json)
+// cross-env -> add environment variable with command
+// testTimeout -> end test after 5000 ms
+
+-> add test with ".jest.js" in "tests" folder, this is where jest search for tests when running "npm run test"
+# SEE docker-nodejs from here
+
+E2E TESTING WITH JEST AND PUPPETEER
+-> puppeteer is jest library for E2E testing
+-> same libraries and file structure is used to test nodejs and react 
+-> npm i jest puppeteer -D
+# go to puppeteer_tutorial.js in docker-react from here
+
