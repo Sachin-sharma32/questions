@@ -1,0 +1,12 @@
+-> powerful web server 
+-> based on event driven architecture
+-> it can also do load balancing, http caching, reverse proxy 
+->  multiple users access single VPN server, VPN server basically communicate with the server on behalf these users, this system is called forward proxy
+-> in forward proxy, server don't know where the request is coming from coz there is only one client i.e VPN (forward proxy server)
+-> reverse proxy -> multiple servers -> nginx (reverse proxy server) -> single client 
+-> reverse proxy is also called "API Gateway"
+-> here client cannot know on which server his request will go
+-> in nginx we code which type of request will go to which server (load balancing)
+-> if someone makes a request to server (nginx -> then server), server will respond (server -> nginx -> client), in the middle nginx can cache the response so that next time if the same request comes then the only the nginx server can respond
+
+$ docker run -it 8000:80 ubuntu  (run ubuntu image)

@@ -1,0 +1,11 @@
+-> in simple request response cycle client make request to server and server sends response and after response has been received the connection is closed 
+-> to make another request to server client has to establish another connection with server 
+-> un-effecient chat app -> "sending" client sends message to server, "receiving" client polls to check for any message on the server every second 
+-> this is bad coz it put lot of stress on the server if there are millions of users polling 
+-> web sockets solves this problem 
+-> client sends request to server "to upgrade" http connection to "web socket" connection so that connection is not lost between client and server when server sends the response 
+-> web sockets is just a web protocol for duplex communication
+-> with this client/server can send multiple request/response without waiting for client to send request or server to send response 
+-> now if any message request comes from a client, the server can directly send the message to receiving client without the client making any request to server 
+-> in nodejs web use "socket.io" to implement web sockets protocol
+-> 
