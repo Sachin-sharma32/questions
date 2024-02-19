@@ -325,7 +325,6 @@ Q. what are synthetic events in react
 -> place-self-center 
 -> inset-x-0 top-0
 -> box-decoration-clone 
--> 
 
 -> bg-[--my-color]
 -> [mark-type:luminance]  -> use property which tailwind don't support 

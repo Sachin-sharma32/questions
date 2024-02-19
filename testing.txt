@@ -11,7 +11,7 @@ Q. what is puppeteer
 
 REACT TESTING 
 Q. manual testing vs automated testing 
-Q. is jest used for 
+Q. what is jest used for 
 Q. what does rtl do 
 Q. what is test driven architecture 
 Q. what are the there places jest looks for test files 

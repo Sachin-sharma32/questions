@@ -39,6 +39,25 @@ Q. what are SOLID principles
 Q. write a promise which fulfills in 10 seconds
 Q. make a button to open a form and write submit form functionality to backend
 
-
-
--> 
+---------------------- meeting ------------------------------
+-> Good afternoon ma'am,
+-> My name is sachin and I'm very excited to join the front end team 
+-> First, of all thanks for taking the time to meet me 
+-> I'd like to get a better understanding of the team's workflow before I join 
+-> Before I begin with the questions, I'd  love to hear your perspective and any information you think would be valuable for me.
+Q. primary tech stack -> 
+Q. development process or methodology -> 
+Q. project management tool -> 
+Q. typescript -> 
+Q. Could you provide some insight into the current and upcoming projects I would be working on?
+Q. how does communication or collaboration happens within a team 
+Q. testing tools 
+Q. which react framework to your use -> 
+Q. which css framework ->
+Q. graphql -> 
+Q. firebase -> 
+Q. do you use any module bundlers like vite 
+Q. do you have a microsercies or monolithic architecture 
+Q. Are there any specific expectations for my role in the first few months?
+-> These are the questions I have for now. 
+-> And Once again, thank you for taking your time to meet me. 

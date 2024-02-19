@@ -100,7 +100,8 @@
   content: '';
   left: 50%;
   position: absolute;
-  filter: blur(45px);
+  -webkit-filter: blur(45px);
+          filter: blur(45px);
   transform: translateZ(0);
 }
 
@@ -132,7 +133,8 @@
 
 /* Conic Gradient Animation */
 .thirteen::before {
-  animation: 6s rotate linear infinite;
+  -webkit-animation: 6s rotate linear infinite;
+          animation: 6s rotate linear infinite;
   width: 200%;
   height: 200%;
   background: var(--tile-border);
@@ -165,7 +167,8 @@
 
 @media (prefers-reduced-motion) {
   .thirteen::before {
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
   }
 
   .card:hover span {
@@ -232,7 +235,8 @@
       rgba(var(--callout-rgb), 0.5)
     );
     background-clip: padding-box;
-    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+            backdrop-filter: blur(24px);
   }
 
   .description div {
@@ -252,12 +256,23 @@
 
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
-    filter: invert(1);
+    -webkit-filter: invert(1);
+            filter: invert(1);
   }
 
   .logo,
   .thirteen img {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+    -webkit-filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+            filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
 

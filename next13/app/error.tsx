@@ -1,4 +1,4 @@
-"use client"; // Error components must be Client Components
+"use client"; // Error components    be Client Components
 
 // it will handle error for all it's children as well 
 // cannot handle error inside layout.tsx/template.tsx in same level

@@ -8,5 +8,21 @@
 -> here client cannot know on which server his request will go
 -> in nginx we code which type of request will go to which server (load balancing)
 -> if someone makes a request to server (nginx -> then server), server will respond (server -> nginx -> client), in the middle nginx can cache the response so that next time if the same request comes then the only the nginx server can respond
+-> we will run nginx in linux machine
+$ docker run -it -p 8000:80 ubuntu  (run ubuntu image)
+$ apt-get update
+$ apt-get install nginx
+$ nginx
+-> go to localhost:8000
+-> devtools -> network -> headers -> server:  (most websites use nginx)
+-> /etc/nginx -> nginx.conf  (here we configure nginx)
+$ apt-get install vim 
+$ vim nginx.conf (remove all content, read the config)
+$ nginx -s reload (reload server after changing configuration)
+--------------------
+$ docker run {container}  (start stopped container)
+$ docker exec -it {container} bash (start a new process in running container)
+------------------
+-> /etc/nginx -> mkdir my-site -> touch index.html and touch style.css
+$ nginx -t  (check if config file is correct)
 
-$ docker run -it 8000:80 ubuntu  (run ubuntu image)

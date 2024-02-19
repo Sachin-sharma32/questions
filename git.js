@@ -21,7 +21,6 @@
 //? git am vs git apply
 // accepting contribution => add origin -> fetch -> create new branch tracking new origin -> merge into old origin
 // github -> shift + > -> open repo your repo in github codespaces
-// configure husky with git hooks to run prettier and eslint before commit or push
 //--------------------------------------------------
 // git init
 // git add
@@ -94,6 +93,7 @@
 // git bisect start
 // git bisect bad {bad-commit-id}
 // git bisect good {good-commit-id}
+
 // pull request:-
 //  clone project
 // make a separate branch

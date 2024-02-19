@@ -8,8 +8,8 @@ Q. does nextjs build frontend or full stack
 Q. what type of rendering nextjs does on reactjs
 Q. does nextjs automatically bundles and compiles reacts
 Q. what 2 types of routers nextjs currently supports
-Q. which type of routing nextjs uses 
-Q. how to create route in nextjs 
+Q. which type of routing nextjs uses
+Q. how to create route in nextjs
 Q. how to create nasted route 
 Q. which files makes the route accessable 
 Q. can we place components, stylesheets, dev-data anywhere inside app/

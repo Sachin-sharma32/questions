@@ -1,0 +1,20 @@
+-> built tool 
+-> 2 main parts
+  # dev server (provides fast hot module replacement)
+  # built command - bundles code with Rollup (instead of using esbuild)
+-> npm create vite@latest
+-> npx degit sveltejs/template#main ./  (scafold project from any community plugin, #main -> from main branch) 
+-> index.html - root of project
+-> scripts 
+  # built -> for production
+  # preview -> before production
+-> npx vite --help  (more vite options)
+-> npm install react-router-dom
+-> before ES modules were available in browser we needed to "bundle" our code so that it could be loaded in the browser
+-> parcel, webpack uses this approach 
+-> since ES modules are natively available in browsers vite jest need to bundle for minification that make the dev server faster
+-> vite divides the modules into 2 categories:
+  # dependencies -> static js files that will not often change, these are pre-bundled by vite using esbuild
+  # source code -> like JSX which is most likely to change, also uses route based code splitting to serve the code when needed
+-> when a component change, traditional build tools will re-bundle the entire app again (slow) and the state of the component is lost (no HMR)
+-> vite solves these issues
